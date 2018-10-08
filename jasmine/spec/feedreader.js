@@ -109,7 +109,7 @@ $(function() {
 
             //Load the second feed
             loadFeed(1, function() {
-                feedOne = $('.feed').html();
+                feedTwo = $('.feed').html();
                 done();
             })
          });
