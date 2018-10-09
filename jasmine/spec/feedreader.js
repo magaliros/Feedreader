@@ -104,15 +104,14 @@ $(function() {
             //Load the first feed
             loadFeed(0, function() {
                 feedOne = $('.feed').html();
-                done();
-            });
 
-            //Load the second feed
-            loadFeed(1, function() {
+                //Load the second feed
+                loadFeed(1, function() {
                 feedTwo = $('.feed').html();
                 done();
-            })
-         });
+                });
+            });
+        });
 
         it('changes when a new feed is loaded', function() {
             expect(feedOne === feedTwo).toBe(false);
